@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main()
+{
+  int a {8};
+  if(a == 8)
+  {
+      std::cout << "a == 8" << std::endl;
+  }
+std::cout << "End of program" << std::endl;
+}
