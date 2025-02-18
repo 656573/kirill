@@ -1,0 +1,15 @@
+public int revers(int n)
+{
+    if (n > 9 && n < 100)
+    {
+        string str = Convert.ToString(n);
+        char arr = str.ToCharArray();
+        Array.Reverse(arr);
+        str = new string(arr);
+        return Convert.ToInt32(str);
+    }
+    else
+    {
+        return n;
+    }
+}
