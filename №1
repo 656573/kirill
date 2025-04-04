@@ -1,0 +1,9 @@
+#inclube <iostream>
+using namespace std;
+int main()
+{
+for (int i = 1; i = 5; ++i, cout << endl) // внешний цикл
+for(int i = 1; i<=2 * i -1; j + = 2) // внутренний цикл 
+cout << j "\t"; // тело внутрннего цикла 
+returm = 0;
+}
