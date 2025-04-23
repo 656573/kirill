@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int number;
+    cout << "Введите трехзначное число: ";
+    cin >> number;
+    
+    // Проверка на трехзначность
+    if (number < 100 || number > 999) {
+        cout << "Ошибка: введено не трехзначное число" << endl;
+        return 1;
+    }
+    
+    // Извлечение цифр
+    int hundreds = number / 100;
+    int tens = (number / 10) % 10;
+    int units = number % 10;
+    
+    // Проверка на одинаковые цифры
+    if (hundreds == tens && tens == units) {
+        cout << "Все цифры одинаковые" << endl;
+    } else {
+        cout << "Цифры не одинаковые" << endl;
+    }
+    
+    return 0;
+}
